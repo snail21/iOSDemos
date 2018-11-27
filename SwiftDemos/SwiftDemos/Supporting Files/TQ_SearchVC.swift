@@ -20,4 +20,8 @@ class TQ_SearchVC: UIViewController {
     }
     
     
+    func loadViewFrame() {
+        
+        
+    }
 }

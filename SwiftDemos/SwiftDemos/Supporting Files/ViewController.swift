@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARK: 加载数据
     func loadViewData() {
         
-        self.dataAry = NSMutableArray(array: ["搜索框", "图片选择器", "load倒计时"])
+        self.dataAry = NSMutableArray(array: ["搜索框", "图片选择器", "load倒计时", "带框输入框"])
         self.mTableview.reloadData()
         
     }
@@ -80,6 +80,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 2:
             
             let vc = TQ_CountDownLoadVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+            
+        case 3:
+            
+            let vc = TQ_InputViewVC()
             self.navigationController?.pushViewController(vc, animated: true)
             
             break

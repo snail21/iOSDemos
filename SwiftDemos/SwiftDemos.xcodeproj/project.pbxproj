@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183A70AC21ACE6C40084A379 /* TQ_InputViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A70AB21ACE6C40084A379 /* TQ_InputViewVC.swift */; };
 		188C1D6E218AD37B001CB352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C1D6D218AD37B001CB352 /* AppDelegate.swift */; };
 		188C1D70218AD37B001CB352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C1D6F218AD37B001CB352 /* ViewController.swift */; };
 		188C1D73218AD37B001CB352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188C1D71218AD37B001CB352 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		18A299EC21A28C1B007FEE68 /* TQ_SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A299EB21A28C1B007FEE68 /* TQ_SearchVC.swift */; };
 		18A299F021A2A645007FEE68 /* TQ_CountDownLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A299EF21A2A645007FEE68 /* TQ_CountDownLoadVC.swift */; };
 		18A299F421A2A698007FEE68 /* TQ_CountDownLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A299F321A2A698007FEE68 /* TQ_CountDownLoadView.swift */; };
+		18DE3DC321ABA7E8009CB886 /* TQ_InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE3DC221ABA7E8009CB886 /* TQ_InputView.swift */; };
 		411D95D2615FB193CA6A48F5 /* Pods_SwiftDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7958215EC2944ADA9CEBDEC1 /* Pods_SwiftDemos.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,7 @@
 /* Begin PBXFileReference section */
 		03737D5A93E1C546A17BBBA0 /* Pods-SwiftDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemos/Pods-SwiftDemos.release.xcconfig"; sourceTree = "<group>"; };
 		1830F043E7A4E1E4D217295E /* Pods-SwiftDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemos/Pods-SwiftDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		183A70AB21ACE6C40084A379 /* TQ_InputViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQ_InputViewVC.swift; sourceTree = "<group>"; };
 		188C1D6A218AD37B001CB352 /* SwiftDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188C1D6D218AD37B001CB352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188C1D6F218AD37B001CB352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		18A299EB21A28C1B007FEE68 /* TQ_SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TQ_SearchVC.swift; path = "SwiftDemos/Supporting Files/TQ_SearchVC.swift"; sourceTree = SOURCE_ROOT; };
 		18A299EF21A2A645007FEE68 /* TQ_CountDownLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQ_CountDownLoadVC.swift; sourceTree = "<group>"; };
 		18A299F321A2A698007FEE68 /* TQ_CountDownLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TQ_CountDownLoadView.swift; path = "SwiftDemos/Class/Home/New Group/TQ_CountDownLoadView.swift"; sourceTree = SOURCE_ROOT; };
+		18DE3DC221ABA7E8009CB886 /* TQ_InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQ_InputView.swift; sourceTree = "<group>"; };
 		7958215EC2944ADA9CEBDEC1 /* Pods_SwiftDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 		18A299DE21A26205007FEE68 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				18DE3DC121ABA7BD009CB886 /* InputView */,
 				18A299ED21A2A5D6007FEE68 /* CountDownLoading */,
 				18A299EA21A28BF5007FEE68 /* Search */,
 				18A299DF21A26276007FEE68 /* TQ_HomeVC.swift */,
@@ -225,6 +230,15 @@
 			);
 			name = CountDownLoadView;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		18DE3DC121ABA7BD009CB886 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				18DE3DC221ABA7E8009CB886 /* TQ_InputView.swift */,
+				183A70AB21ACE6C40084A379 /* TQ_InputViewVC.swift */,
+			);
+			path = InputView;
 			sourceTree = "<group>";
 		};
 		2BD4D422C4740523EC91B263 /* Frameworks */ = {
@@ -434,9 +448,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A299E321A262DD007FEE68 /* TQ_NavigationController.swift in Sources */,
+				18DE3DC321ABA7E8009CB886 /* TQ_InputView.swift in Sources */,
 				18A299E021A26276007FEE68 /* TQ_HomeVC.swift in Sources */,
 				188C1D70218AD37B001CB352 /* ViewController.swift in Sources */,
 				18A299EC21A28C1B007FEE68 /* TQ_SearchVC.swift in Sources */,
+				183A70AC21ACE6C40084A379 /* TQ_InputViewVC.swift in Sources */,
 				18A299F021A2A645007FEE68 /* TQ_CountDownLoadVC.swift in Sources */,
 				18A299F421A2A698007FEE68 /* TQ_CountDownLoadView.swift in Sources */,
 				18A299E621A263AB007FEE68 /* GlobalFile.swift in Sources */,
@@ -617,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRHAQCZX3B;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftDemos/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,6 +654,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRHAQCZX3B;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftDemos/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
