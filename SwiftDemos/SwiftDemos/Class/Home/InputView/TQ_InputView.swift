@@ -81,7 +81,7 @@ class TQ_InputView: UIView, UITextViewDelegate {
         textBgView.textColor = UIColor.clear
         textBgView.tintColor = UIColor.clear
         textBgView.backgroundColor = UIColor.clear
-        textBgView.keyboardType = UIKeyboardType.default
+        textBgView.keyboardType = UIKeyboardType.numberPad
         contairView.addSubview(textBgView)
         
         startEdit()
