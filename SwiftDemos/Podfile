@@ -1,0 +1,14 @@
+platform :ios,'8.0'
+inhibit_all_warnings!
+use_frameworks!
+target 'SwiftDemos' do
+pod 'Alamofire'
+pod 'SwiftyJSON'
+pod 'YYKit'
+pod 'SVProgressHUD'
+pod 'MJRefresh'
+pod 'SnapKit'
+pod 'RxSwift'
+pod 'IQKeyboardManagerSwift','~> 4.0.13'
+pod 'Kingfisher'
+end
